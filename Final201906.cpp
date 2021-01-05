@@ -1,4 +1,4 @@
-// Final201806.cpp: ©w¸q¥D±±¥xÀ³¥Îµ{¦¡ªº¶i¤JÂI¡C
+// Final201806.cpp: å®šç¾©ä¸»æ§å°æ‡‰ç”¨ç¨‹å¼çš„é€²å…¥é»ã€‚
 //
 
 
@@ -64,7 +64,7 @@ void pqArrayInsert(BinaryNode<string>* pqArray, int& size, const string word)
 	for (int i = 0; i < size; i++)
 	{
 		if ( pqArray[i].getItem() > word) {
-			for (int j = size; j > 0; j--)
+			for (int j = size; j > i; j--)
 			{
 				pqArray[j] = pqArray[j-1];
 			}
